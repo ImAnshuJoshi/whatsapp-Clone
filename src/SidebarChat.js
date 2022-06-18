@@ -2,7 +2,7 @@ import React from 'react'
 import './SidebarChat.css';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
-function SidebarChat({addNewChat}) {
+function SidebarChat({id,name,addNewChat}) {
   const createChat =()=>{
     const roomName=prompt("Please enter name for chat");
   };
@@ -14,7 +14,7 @@ function SidebarChat({addNewChat}) {
       <AccountCircleIcon/>
       <div className="sidebarChat__info">
          <h2>
-             Room name</h2>
+             {name}</h2>
              <p>
                  Last message...</p> 
       </div>

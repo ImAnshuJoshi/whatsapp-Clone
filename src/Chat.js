@@ -5,6 +5,9 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import InsertLinkIcon from '@mui/icons-material/InsertLink';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import EmojiEmotionsIcon from '@mui/icons-material/EmojiEmotions';
+import MicIcon from '@mui/icons-material/Mic';
+// import './bg.png';
 
 function Chat() {
   return (
@@ -29,10 +32,24 @@ function Chat() {
             </div>
         </div>
         <div className="chat__body">
-            
+    <p className={`chat__message ${true &&"chat__reciever"}`}>
+                <span className="chat__name">
+                    Anshu Joshi
+                </span>
+                hello guys how are you? 
+            <span className="chat__timestamp">
+                3:25pm
+            </span>
+            </p>
         </div>
         <div className="chat__footer">
-
+        <EmojiEmotionsIcon/>
+        <form action="">
+            <input type="text" placeholder="Type your message">
+            </input>
+            <button>Send</button>
+        </form>
+        <MicIcon/>
         </div>
     </div>
   )
